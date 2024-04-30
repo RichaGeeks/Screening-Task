@@ -1,0 +1,536 @@
+---
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<nav class="bg-blue-950 z-20 ">
+			<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 overflow-visible">
+			  <div class="relative flex h-16 items-center justify-between">
+				<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+				  <!-- Mobile menu button-->
+				  <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+					<span class="absolute -inset-0.5"></span>
+					<span class="sr-only">Open main menu</span>
+					<!--
+					  Icon when menu is closed.
+		  
+					  Menu open: "hidden", Menu closed: "block"
+					-->
+					<svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+					</svg>
+					<!--
+					  Icon when menu is open.
+		  
+					  Menu open: "block", Menu closed: "hidden"
+					-->
+					<svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				  </button>
+				</div>
+				<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+				  <div class="flex  items-center">
+					<img class="h-8 w-auto" src="iitblogo.png" alt="Your Company">
+				  </div>
+				  <div class="hidden sm:ml-6 sm:block">
+					<div class="flex space-x-4">
+					  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+					  <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+					  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Resourses</a>
+					  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Schedule</a>
+					  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">FAQ's</a>
+					</div>
+				  </div>
+			  </div>
+			</div>
+		  
+			<!-- Mobile menu, show/hide based on menu state. -->
+			<div class="sm:hidden" id="mobile-menu">
+			  <div class="space-y-1 px-2 pb-3 pt-2">
+				<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+				<a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+				<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+				<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+				<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+			  </div>
+			</div>
+			<div class="relative flex z-0 items-center justify-center h-screen overflow-hidden"> 
+				<video src= "indiaearthvid.mp4" autoplay="{true}" loop muted class="flex absolute min-w-full min-h-full w-screen max-w-none">
+			    </video>
+			</div>
+		</nav>
+		<section class="bg-blue-950">
+			<div class=" grid grid-cols-3">
+				<div class=" col-span-2 pt-16 pl-14">
+					<h2 class="mb-12 text-3xl text-fuchsia-50 font-bold leadi sm:text-5xl">Introduction</h2>
+					<p class= "pb-8 pr-12">Welcome to the National Level Open Hardware-IoT Geospatial Hackathon, a stage where innovation knows no boundaries. This premier event brings together visionaries, tech enthusiasts, and problem solvers from across the nation to harness the power of open hardware, the Internet of Things (IoT), and geospatial technology. Get ready to explore uncharted possibilities, collaborate on real-world challenges, and make a significant impact on our world.
+
+						Significance:
+						In a world where technology shapes our daily lives, the significance of this hackathon cannot be overstated. Here, participants have the opportunity to redefine the boundaries of what's possible. By merging open source principles with cutting-edge technologies, we aim to:
+						Solve Real-World Problems: Tackle critical issues such as environmental sustainability, disaster management, precision agriculture, and more. Your solutions can change lives and protect our planet.
+						Foster Innovation: Innovation thrives when knowledge is shared openly. By promoting open source hardware and IoT, we empower you to push the boundaries of creativity and discovery.
+						Create Collaborative Communities: Through this hackathon, we build communities of like-minded individuals passionate about making a difference. Together, we can achieve more than any one of us can alone.
+						Empower Future Leaders: Whether you're a student, a professional, or an enthusiast, this hackathon is a launchpad for your ideas. It's a chance to develop your skills, showcase your talents, and make your mark on the world.</p>
+					<h2 class="mb-12 text-3xl text-fuchsia-50 font-bold leadi sm:text-5xl">Purpose</h2>
+					
+				</div>
+				<div class="col-span-1">
+					<div class="pt-10 pb-10 pl-10 pr-5 hover:scale-125">
+						<div class="bg-[url('stars.jpg')] w-[250px] h-[480px]  rounded-[50%/60%_60%_40%_40%] drop-shadow-[0px_15px_3px_rgba(0,0,0,0.25)]">
+							<div>
+								<button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">Registor Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" col-span-3 pt-0 pl-14">
+					<p class= "pb-16 pr-12">This hackathon is more than just a competition; it's a platform for innovators, creators, and visionaries to come together and pioneer solutions for a brighter future. Our purpose is to harness the power of open source hardware, the Internet of Things (IoT), and Geographic Information Systems (GIS) to address some of the world's most pressing challenges.
+
+						The FOSSEE project, IIT Bombay promotes the use of Free/ Libre Open Source Software in academia and Industry. The FOSSEE project  is funded through the National Mission on Education through ICT (NMEICT), Ministry of Education, Government of India. The FOSSEE-GIS team manages the overall coordination of the "IIT Bombay FOSSEE GIS Internship in Geospatial Dashboard Design and Implementation". 
+					</p>
+
+				</div>
+
+				
+			</div>
+		</section>
+		  <!-- VIDEO 
+		  <div class="relative flex z-0 items-center justify-center h-screen overflow-hidden"> 
+			<video src= "indiaearthvid.mp4" autoplay="{true}" loop muted class="flex absolute min-w-full min-h-full w-screen max-w-none">
+			</video>
+			
+			
+		  </div> -->
+		<div class="pl-6 pr-6 pt-6 pb-6 z-10 shadow-xl bg-gradient-to-r from-blue-800 to-zinc-950 flex flex-col">
+			<div class="bg-gradient-to-r from-zinc-950 to-blue-800 grid grid-cols-5 rounded-xl justify-around gap-x-20 gap-y-8 pt-3 pb-6 pl-6 pr-6">
+                <div class="text-fuchsia-50 col-span-5 text-3xl font-bold leadi sm:text-5xl text-center">Our Partners</div>
+				<div class= "rounded-lg bg-fuchsia-50 col-span-1 hover:rotate-12 duration-300"><div><img class="max-w-40 " src="iitblogo.png" alt="IIT Bombay logo"></img></div></div>
+				<div class= "rounded-lg bg-fuchsia-50 col-span-1 hover:rotate-12 duration-300"><div><img class="max-w-40 " src="fosseelogo.png" alt="IIT Bombay logo"></img></div></div>
+				<div class= "rounded-lg bg-fuchsia-50 col-span-1 hover:rotate-12 duration-300"><div><img class="max-w-40 " src="icfosslogo.png" alt="IIT Bombay logo"></img></div></div>
+				<div class= "rounded-lg bg-fuchsia-50 col-span-1 hover:rotate-12 duration-300"><div> <img class="max-w-40 " src="iittirupati.png" alt="IIT Bombay logo"></img></div></div>
+				<div class= "rounded-lg bg-fuchsia-50 col-span-1 hover:rotate-12 duration-300"><div><img class="max-w-40 " src="navavishkaar.png" alt="IIT Bombay logo"></img></div></div>
+				<div class= "rounded-lg bg-fuchsia-50 col-span-1 hover:rotate-12 duration-300"><div><img class="max-w-40 " src="nmeictlogo.png" alt="IIT Bombay logo"></img></div></div>
+				<div class= "rounded-lg bg-fuchsia-50 col-span-1 hover:rotate-12 duration-300"><div><img class="max-w-24 " src="NMICPSlogo.png" alt="IIT Bombay logo"></img></div></div>
+				<div class= "rounded-lg bg-fuchsia-50 col-span-1 hover:rotate-12 duration-300"><div><img class="max-w-24 " src="rudralogo.png" alt="IIT Bombay logo"></img></div></div>
+				<div class= "rounded-lg bg-fuchsia-50 col-span-1 hover:rotate-12 duration-300"><div ><img class=" max-w-24 " src="stlogo.png" alt="IIT Bombay logo"></img></div></div>
+				<div class="col-span-5 text-gray-400"><p>Main Organizer: IIT Bombay FOSSEE GIS & OSHW project (NMEICT, Ministry of Education, Government of India)  The IIT Bombay FOSSEE GIS & OSHW project teams are the main organizers of this National Level Geospatial IoT Hackathon 2024 (Edition 01). FOSSEE promotes the usage of Free/Libre Open Source Software in academia and industry and is funded through the National Mission on Education through ICT, Ministry of Education, Government of India.<br>Technical Partner:  The Rural Data Research and Analysis (RuDRA) Lab, IIT Bombay is India's first HPC-powered data center dedicated to Rural Development.<br>Organizing Partners: IITTNiF (NM-ICPS, DST, Government of India) & ICFOSS (Government of Kerala):   The IIT Tirupati Navavishkar I-Hub Foundation is the Technology Innovation Hub of IIT Tirupati specializing in Positioning and Precision Technologies, funded through the National Mission on Interdisciplinary Cyber-Physical System (NM-ICPS), Department of Science and Technology, Government of India. ICFOSS: The International Centre for Free and Open Source Software (ICFOSS) is an autonomous organization set up by the Government of Kerala, India, and has the combined mandate of popularizing Free and Open Source Software for universal use; consolidating the early FOSS work done in Kerala; and networking with different nations, communities, and governments to collaboratively promote FOSS</p></div>
+			</div>
+			<!-- 
+			<div class="pb-6 grid grid-cols-2 justify-evenly pl-4 pr-4 pt-6">
+				<p class="text-xl text-fuchsia-50 col-span-2">FAQ's [Frequently Asked Questions]<br><br></p>
+				<div class="col-span-1">
+					<div class="grid grid-cols-12 gap-x-10 pb-5">
+						<div class="rounded-full  bg-fuchsia-50 max-h-4 z-10 hover:bg-gray-950">.</div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="group rounded-full bg-stone-950 max-h-4 shadow-2xl z-10 "><div class="z-30 invisible transition ease-in-out group-hover:visible "> hellow worls 1</div></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50  z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 z-10 shadow-2xl hover:scale-150"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+					</div>
+				</div>
+				<div class="col-span-1">
+					<div class="grid grid-cols-12 gap-x-10">
+						<div ></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl max-h-4 hover:bg-gray-950">.</div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					</div>
+				</div>
+				<div class="col-span-1 ">
+					<div class="grid grid-cols-12 gap-x-10 pb-5">
+						<div class="rounded-full bg-fuchsia-50 z-10 max-h-4 hover:bg-gray-950">.</div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 z-10 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 z-10 hover:bg-gray-950"></div>
+					</div>
+				</div>
+				<div class="col-span-1">
+					<div class="grid grid-cols-12 gap-x-10">
+						<div ></div>
+					    <div class="rounded-full bg-fuchsia-50 max-h-4 hover:bg-gray-950">.</div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div></div>
+				</div>
+
+				<div class="col-span-1">
+					<div class="grid grid-cols-12 gap-x-10 pb-5">
+						<div class="rounded-full  bg-stone-950 shadow-2xl max-h-4 hover:bg-gray-950">.</div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					</div>
+				</div>
+				<div class="col-span-1">
+					<div class="grid grid-cols-12 gap-x-10">
+						<div ></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl max-h-4 hover:bg-gray-950">.</div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					</div>
+				</div>
+				<div class="col-span-1 ">
+					<div class="grid grid-cols-12 gap-x-10 pb-5">
+						<div class="rounded-full bg-fuchsia-50 max-h-4 hover:bg-gray-950">.</div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					</div>
+				</div>
+				<div class="col-span-1">
+					<div class="grid grid-cols-12 gap-x-10">
+						<div ></div>
+					    <div class="rounded-full bg-fuchsia-50 max-h-4 hover:bg-gray-950">.</div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div></div>
+				</div>
+
+				<div class="col-span-1 ">
+					<div class="grid grid-cols-12 gap-x-10 pb-5">
+						<div class="rounded-full bg-fuchsia-50 max-h-4 hover:bg-gray-950">.</div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+					</div>
+				</div>
+				<div class="col-span-1">
+					<div class="grid grid-cols-12 gap-x-10">
+						<div ></div>
+					    <div class="rounded-full bg-fuchsia-50 max-h-4 hover:bg-gray-950">.</div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950  "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950 "></div>
+					    <div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950 "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950 "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950  "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950  "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950  "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950  "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950 "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950  "></div>
+					</div>
+				</div>
+
+				<div class="col-span-1 ">
+					<div class="grid grid-cols-12 gap-x-10 pb-5">
+						<div class="rounded-full bg-stone-950 shadow-2xl max-h-4 hover:bg-gray-950">.</div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+						<div class="rounded-full bg-fuchsia-50 hover:bg-gray-950"></div>
+					</div>
+				</div>
+				<div class="col-span-1">
+					<div class="grid grid-cols-12 gap-x-10">
+						<div ></div>
+					    <div class="rounded-full bg-fuchsia-50 max-h-4 hover:bg-gray-950">.</div>
+					    <div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950  "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950 "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950 "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950 "></div>
+					    <div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950  "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950  "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950  "></div>
+					    <div class="rounded-full bg-stone-950 shadow-2xl hover:bg-gray-950"></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950 "></div>
+					    <div class="rounded-full bg-fuchsia-50 hover:bg-gray-950  "></div>
+					</div>
+				</div>
+
+			</div> -->
+
+		</div>
+		<section class="bg-[#1D1D1D] text-gray-100 py-16 min-h-screen">
+			<div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
+			  <h2 class="mb-12 text-4xl font-bold leadi text-center sm:text-5xl">Frequently Asked Questions</h2>
+			  <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+				<details>
+				  <summary class="py-2 outline-none cursor-pointer focus:underline">How can I place an order?</summary>
+				  <div class="px-4 pb-4">
+					<p>You can easily place an order on our website by browsing our product catalog, selecting the items you want, and adding them to your cart. Then, proceed to checkout, where you can provide your shipping and payment information to complete the order.</p>
+				  </div>
+				</details>
+				<details>
+				  <summary class="py-2 outline-none cursor-pointer focus:underline">What payment methods do you accept?</summary>
+				  <div class="px-4 pb-4">
+					<p>We accept various payment methods, including credit cards, debit cards, net banking, and mobile wallet payments. You can choose the payment option that is most convenient for you during the checkout process.</p>
+				  </div>
+				</details>
+				<details>
+				  <summary class="py-2 outline-none cursor-pointer focus:underline">How long does shipping take?</summary>
+				  <div class="px-4 pb-4">
+					<p>Shipping times may vary depending on your location and the shipping method chosen. Typically, orders are processed within 1-2 business days, and delivery can take 3-7 business days within India. You will receive a tracking notification once your order is shipped.</p>
+				  </div>
+				</details>
+				<details>
+				  <summary class="py-2 outline-none cursor-pointer focus:underline">Can I return a product if I'm not satisfied?</summary>
+				  <div class="px-4 pb-4">
+					<p>Yes, we have a hassle-free return policy. If you are not satisfied with your purchase, you can initiate a return within 30 days of receiving the product. Please contact our customer support at <a href="" class="underline">example@gmail.com</a> for assistance.</p>
+				  </div>
+				</details>
+				<details>
+				  <summary class="py-2 outline-none cursor-pointer focus:underline">Do you offer international shipping?</summary>
+				  <div class="px-4 pb-4">
+					<p>Currently, we only provide shipping services within India. However, we may consider expanding our shipping options to international locations in the future. Please stay updated with our website for any changes in shipping destinations.</p>
+				  </div>
+				</details>
+				<details>
+				  <summary class="py-2 outline-none cursor-pointer focus:underline">What is your customer support contact?</summary>
+				  <div class="px-4 pb-4">
+					<p>If you have any questions, concerns, or need assistance, you can reach our customer support team at 9911083755 during our business hours, Monday to Saturday from 10 am to 6 pm. You can also contact us via email at <a href="" class="underline">example@gmail.com</a>.</p>
+				  </div>
+				</details>
+				<details>
+				  <summary class="py-2 outline-none cursor-pointer focus:underline">What are your terms and conditions?</summary>
+				  <div class="px-4 pb-4">
+					<p>You can find our detailed terms and conditions by visiting our 
+					  <a href="" class="underline">Terms of Service</a> 
+					  page on our website. It includes information about our policies, user guidelines, and more.</p>
+				  </div>
+				</details>
+			  </div>
+			</div>
+		  </section>
+		  
+
+		  <section class="bg-indigo-950 ">
+			<div class="container grid grid-cols-1 gap-10 px-6 py-12 mx-auto lg:grid-cols-3">
+				<div>
+					<p class="font-medium text-blue-700 ">Have a Doubt ?</p>
+		
+					<h1 class="mt-2 text-3xl text-gray-500 font-bold leadi sm:text-5xl">Get in touch with us!</h1>
+					<div class="flex flex-col">
+						<div class="relative sm:max-w-xl sm:mx-auto">
+							<div class="">
+								<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+								<dotlottie-player src="https://lottie.host/302233cb-4733-466e-a0cf-47967c5c80fc/38BReiNcS3.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+							</div>
+							<div class="text-white relative px-4 py-4 bg-indigo-400 shadow-lg sm:rounded-3xl ">
+								<div class="text-center pb-6">
+									<h1 class="text-3xl">Contact Us!</h1>
+					
+									<p class="text-gray-300">
+										<br>rajesh@cse.iitb.ac.in; <br>mohamedkasim@iitb.ac.Sin
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+		
+				<div class="grid grid-cols-1 gap-12 lg:col-span-2 bg-indigo-950  sm:grid-cols-2 pl-6">
+					<div class="rounded-lg shadow-2xl bg-blue-950 hover:bg-gray-950 pl-3 pb-3 ">
+						<h2 class="font-medium text-gray-200 dark:text-white">Prof. Kannan Moudgalya</h2>
+						<p class="mt-2 text-gray-500 dark:text-gray-400 ">Principal Investigator, FOSSEE, Spoken Tutorial, NVLI<br>Indian Institute of Technology Bombay</p>
+					</div>
+		
+					<div class="rounded-lg shadow-2xl bg-blue-950 hover:bg-gray-950  pl-3 pb-3">
+						<h2 class="font-medium text-gray-200 dark:text-white">Prof. Pennan Chinnasamy</h2>
+						<p class="mt-2 text-gray-500 dark:text-gray-400">
+
+							Co.P.I., FOSSEE & PiC, The Rural Data Research & Analysis (RuDRA) Lab, IIT Bombay<br>
+							
+							Indian Institute of Technology Bombay</p>
+					</div>
+		
+					<div class="rounded-lg shadow-2xl bg-blue-950 hover:bg-gray-950 pl-3 pb-3">
+						<h2 class="font-medium text-gray-200 dark:text-white">Prof. Roshan Srivastav</h2>
+						<p class="mt-2 text-gray-500 dark:text-gray-400">
+
+							Project Director, IIT Tirupati Navavishkar I-Hub Foundation (NM-ICPS, DST)<br>
+							
+							Indian Institute of Technology Tirupati</p>
+					</div>
+		
+					<div class="rounded-lg shadow-2xl bg-blue-950 hover:bg-gray-950 pl-3 pb-3">
+						<h2 class="font-medium text-gray-200 dark:text-white">Mr. Rajesh Kushalkar</h2>
+						<p class="mt-2 text-gray-500 dark:text-gray-400">Senior Manager, FOSSEE-Open Source Hardware (OSHW)<br>Indian Institute of Technology Bombay</p>
+					</div>
+		
+					<div class="rounded-lg shadow-2xl bg-blue-950 hover:bg-gray-950 pl-3 pb-3">
+						<h2 class="font-medium text-gray-200 dark:text-white">Dr. Sunil T T</h2>
+						<p class="mt-2 text-gray-500 dark:text-gray-400">Director<br>ICFOSS</p>
+					</div>
+		
+					<div class="rounded-lg shadow-2xl bg-blue-950 hover:bg-gray-950 pl-3 pb-3">
+						<h2 class="font-medium text-gray-200 dark:text-gray-200">Dr. Srinivasan Ravindran</h2>
+						<p class="mt-2 text-gray-500 dark:text-gray-400">Program Head, FOSS Business Solutions<br>ICFOSS</p>
+					</div>
+				</div>
+
+				<div class=" grid grid-cols-3 sm:col-span-3 gap-12 pl-6">
+					<div class="rounded-lg shadow-2xl bg-blue-950 hover:bg-gray-950 min-h-32 pl-3 pb-3">
+						<h2 class="font-medium text-gray-800 dark:text-white">San Francisco</h2>
+						<p class="mt-2 text-gray-500 dark:text-gray-400">100 Flinders Street <br> Melbourne VIC 3000 AU</p>
+					</div>
+		
+					<div class="rounded-lg shadow-2xl bg-blue-950 hover:bg-gray-950 pl-3 pb-3">
+						<h2 class="font-medium text-gray-800 dark:text-white">Byron Bay</h2>
+						<p class="mt-2 text-gray-500 dark:text-gray-400">100 Flinders Street <br> Melbourne VIC 3000 AU</p>
+					</div>
+		
+					<div class="rounded-lg shadow-2xl bg-blue-950 hover:bg-gray-950 pl-3 pb-3">
+						<h2 class="font-medium text-gray-700 dark:text-gray-200">Sweden</h2>
+						<p class="mt-2 text-gray-500 dark:text-gray-400 ">100 Flinders Street <br> Melbourne VIC 3000 AU</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		 
+
+
+	</body>
+	
+
+
+
+<!--FOOTER SECTION -->
+<!--FOOTER SECTION INTEGRATED FROM FLOWBITE -->
+<footer class=" bg-blue-950">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a>
+                  <span class="self-center text-2xl text-gray-500 font-semibold whitespace-nowrap dark:text-white">IIT Bombay-FOSSEE</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">About</h2>
+                  <ul class="text-gray-500  font-medium">
+                      <li>
+                          <a href="" class="hover:underline">IIT BOMBAY</a>
+                      </li>
+                      <li>
+                          <a href="" class="hover:underline">FOSSEE</a>
+                      </li>
+					  <li>
+						<a href="" class="hover:underline">NMEICT</a>
+					  </li>
+					  <li>
+						<a href="" class="hover:underline">The RuDRA lab</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 "></h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li >
+                          <a href="" class="hover:underline ">IITTNiF</a>
+                      </li>
+                      <li>
+                          <a href="" class="hover:underline">ICFOSS</a>
+                      </li>
+					  <li>
+						<a href="" class="hover:underline">Spoken Tutorials</a>
+					</li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resourses</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">QGIS</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Spoken Tutorials -FOSSE -GIS</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">This work is licensed under a <a href="" class="hover:underline"> Creative Commons Attribution-ShareAlike 4.0 International License .</a>
+          </span>
+      </div>
+    </div>
+</footer>
+
+</html>
