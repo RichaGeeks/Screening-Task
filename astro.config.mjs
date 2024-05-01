@@ -10,4 +10,8 @@ export default defineConfig({
   integrations: [react(), tailwind()],
   output: 'server',
   adapter: netlify(),
+  edgeMiddleware: true,
+  image: {
+    domains: ['stars.jpg'],
+  },
 });
